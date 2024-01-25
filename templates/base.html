@@ -1,0 +1,39 @@
+{{define "base"}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+    body {
+      padding-top: 56px;
+      /* Adjust based on your navbar height */
+    }
+  </style>
+
+  {{block "css" .}}
+  {{end}}
+</head>
+
+<body>
+  {{block "content" .}}
+
+  {{end}}
+
+
+  {{block "js"}}
+
+  {{end}}
+
+</body>
+
+</html>
+
+{{end}}
